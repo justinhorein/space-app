@@ -1,0 +1,17 @@
+{
+  "name": "space-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "cd server; ./mvnw spring-boot:run",
+    "client": "npm start --prefix frontend",
+    "start": "concurrently 'npm run server' 'npm run client'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
